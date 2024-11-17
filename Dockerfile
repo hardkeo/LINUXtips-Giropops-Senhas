@@ -1,4 +1,5 @@
 FROM python:3.14.0a1-slim-bookworm
+LABEL maintainer="hardkeo@gmail.com"
 WORKDIR /app
 ADD https://github.com/badtuxx/giropops-senhas.git .
 RUN pip3 install --no-cache-dir -r requirements.txt
