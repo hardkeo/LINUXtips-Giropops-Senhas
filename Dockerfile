@@ -6,8 +6,8 @@ ADD https://github.com/badtuxx/giropops-senhas.git .
 RUN python -m venv venv
 ENV PATH="/app/venv/bin":$PATH
 RUN pip install -r requirements.txt
-RUN pip install requests #to use in heathcheck script
-
+# to use in heathcheck script
+RUN pip install requests
 FROM cgr.dev/chainguard/python:latest
 
 WORKDIR /app
