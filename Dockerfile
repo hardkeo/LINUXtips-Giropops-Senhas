@@ -23,7 +23,7 @@ import requests
 try:
     response = requests.get('http://127.0.0.1:5000').status_code
 except:
-    response = 'fail'
+    response = 'unhealthy'
 
 if response == 200:
     exit(0)
